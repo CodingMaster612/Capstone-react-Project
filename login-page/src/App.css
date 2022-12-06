@@ -222,3 +222,8 @@ h4{
   color: #fff;
   font-size: 100px;
 }
+html body{
+  background-image: url('https://prod-media-eng.dhakatribune.com/uploads/2016/10/stock-marke.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
