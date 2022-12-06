@@ -36,12 +36,25 @@ export default function (props) {
                     <p className="forgot-password text-right mt-2">
                         Forgot <a href="#">password?</a>
                     </p>
-                    
                 </div>
             </form>
+            <body>
             
-        </div>
+
+            <div class="header">
+                <a href="#default" class="logo">CompanyLogo</a>
+                <div class="header-right">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+                
+            </body>
+            </div>
+            
 
         
+
     )
 }
