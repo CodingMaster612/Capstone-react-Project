@@ -1,15 +1,27 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./App.css"
+import Home from './components/pages/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Services from './components/pages/Services';
+import Products from './components/pages/Products';
+import ContactUs from './components/pages/ContactUs';
+import SignUp from './components/pages/SignUp';
+import Marketing from './components/pages/Marketing';
+import Consulting from './components/pages/Consulting';
 import Auth from "./components/Auth.js"
-import Body from "./components/Body.js"
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/auth" element={<Auth />} />
-        
+        <Route path='/' exact component={Home} />
+        <Route path='/services' component={Services} />
+        <Route path='/products' component={Products} />
+        <Route path='/contact-us' component={ContactUs} />
+        <Route path='/sign-up' component={SignUp} />
+        <Route path='/marketing' component={Marketing} />
+        <Route path='/consulting' component={Consulting} />
 
       </Routes>
     </BrowserRouter>

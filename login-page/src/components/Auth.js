@@ -42,7 +42,7 @@ export default function (props) {
             
 
             <div class="header">
-                <a href="#default" class="logo">CompanyLogo</a>
+                <a href="#default" class="logo">Menu</a>
                 <div class="header-right">
                     <a class="active" href="#home">Home</a>
                     <a href="#contact">Contact</a>
