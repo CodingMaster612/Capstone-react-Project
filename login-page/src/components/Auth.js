@@ -5,7 +5,7 @@ export default function (props) {
 
 
         <div className="Auth-form-container">
-            
+
             <form className="Auth-form">
                 <div className="Auth-form-content">
                     <h3 className="Auth-form-title"></h3>
@@ -36,13 +36,12 @@ export default function (props) {
                     <p className="forgot-password text-right mt-2">
                         Forgot <a href="#">password?</a>
                     </p>
+                    
                 </div>
             </form>
-            <body>
-                <div className="out-view-container">
-                    {/* <h1>Hello test</h1> */}
-                </div>
-            </body>
+            
         </div>
+
+        
     )
 }
