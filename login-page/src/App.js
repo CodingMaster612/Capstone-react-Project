@@ -12,6 +12,7 @@ import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
 import Auth from "./components/Auth.js"
 
+
 function App() {
   return (
     <BrowserRouter>
