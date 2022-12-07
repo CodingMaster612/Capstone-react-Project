@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 // import Navbar from './components/Navbar';
-
+import styled from "styled-components";
+import { AccountBox } from "./components/accountBox";
 import "./App.css"
 import Home from './components/pages/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -13,8 +14,19 @@ import Consulting from './components/pages/Consulting';
 import Auth from "./components/Auth.js"
 
 
+const AppContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 function App() {
   return (
+    <AppContainer>
+      
     <BrowserRouter>
     {/* <Navbar/> */}
       <Routes>
@@ -29,6 +41,8 @@ function App() {
 
       </Routes>
     </BrowserRouter>
+    </AppContainer>
+    
   )
 }
 
