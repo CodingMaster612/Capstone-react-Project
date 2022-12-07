@@ -27,11 +27,12 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      <AccountBox />
+      
     <BrowserRouter>
     {/* <Navbar/> */}
       <Routes>
         <Route path="/auth" element={<Auth />} />
+        <Route path="/home" element={<AccountBox />}/>
         {/* <Route path='/'component={<Home/>} />
         <Route path='/services' component={<Services/>} />
         <Route path='/products' component={<Products/>} />
