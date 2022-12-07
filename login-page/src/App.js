@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 
 import "./App.css"
 import Home from './components/pages/Home';
@@ -16,16 +16,16 @@ import Auth from "./components/Auth.js"
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
+    {/* <Navbar/> */}
       <Routes>
         <Route path="/auth" element={<Auth />} />
-        <Route path='/'component={<Home/>} />
+        {/* <Route path='/'component={<Home/>} />
         <Route path='/services' component={<Services/>} />
         <Route path='/products' component={<Products/>} />
         <Route path='/contact-us' component={<ContactUs/>} />
         <Route path='/sign-up' component={<SignUp/>} />
         <Route path='/marketing' component={<Marketing/>} />
-        <Route path='/consulting' component={<Consulting/>} />
+        <Route path='/consulting' component={<Consulting/>} /> */}
 
       </Routes>
     </BrowserRouter>
