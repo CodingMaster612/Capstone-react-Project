@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components";
 import "./App.css"
+import Navbar from "./components/Navigation/Navbar.js";
+
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -22,23 +24,23 @@ const AppContainer = styled.div`
 
 function App() {
   return (
+
+
+
     
 
 
-    <AppContainer>
-     
-      
-      
-      <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={<AccountBox />} />
-          
-
-        </Routes>
+      <AppContainer>
         
-      </BrowserRouter>
+      <BrowserRouter>
+     
+        <Routes>
+          <Route path="/home" element={<AccountBox />} />
+          </Routes>
+        </BrowserRouter>
     </AppContainer>
     
+
 
   )
 }
