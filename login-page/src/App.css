@@ -39,7 +39,7 @@
 
 body{
   background-image: url('https://i.pinimg.com/originals/66/a5/96/66a5963dde263b4e5581a8697ea2bacf.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
 }
