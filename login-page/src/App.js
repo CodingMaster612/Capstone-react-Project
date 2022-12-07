@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 // import Navbar from './components/Navbar';
 import styled from "styled-components";
-import { AccountBox } from "./components/accountBox";
 import "./App.css"
 import Home from './components/pages/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -12,6 +11,8 @@ import SignUp from './components/pages/SignUp';
 import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
 import Auth from "./components/Auth.js"
+import { AccountBox } from "./components/accountBox";
+
 
 
 const AppContainer = styled.div`
@@ -26,7 +27,7 @@ const AppContainer = styled.div`
 function App() {
   return (
     <AppContainer>
-      
+      <AccountBox />
     <BrowserRouter>
     {/* <Navbar/> */}
       <Routes>
