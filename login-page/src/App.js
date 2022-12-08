@@ -34,7 +34,7 @@ function App() {
         <Routes>
 
         
-          <Route  path="/login" element={<AccountBox />} />
+          <Route  path="/" element={<AccountBox />} />
           
           
         </Routes>
