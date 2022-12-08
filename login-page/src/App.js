@@ -2,14 +2,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components";
 import "./App.css"
 // import Navbar from "./components/Navigation/Navbar.js";
-
+import  Back from "./components/background"
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import { AccountBox } from "./components/accountBox";
 
-import Home from './components/Home';
 
 
 
@@ -34,12 +33,10 @@ function App() {
     <AppContainer>
 
       <BrowserRouter>
-
         <Routes>
 
        
-          <Route  path="/home" component={<Home/>}/>
-         
+         <Route path="/home" element={<Back/>}/>
           <Route  path="/login" element={<AccountBox />} />
           
         </Routes>
