@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components";
 import "./App.css"
-import Navbar from "./components/Navigation/Navbar.js";
+// import Navbar from "./components/Navigation/Navbar.js";
 
 
 
@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import { AccountBox } from "./components/accountBox";
 
+import Home from './components/Home';
 
 
 
@@ -27,19 +28,25 @@ function App() {
 
 
 
+
+
     
+    <AppContainer>
 
-
-      <AppContainer>
-        
       <BrowserRouter>
-     
+
         <Routes>
-          <Route path="/home" element={<AccountBox />} />
-          </Routes>
-        </BrowserRouter>
+
+       
+          <Route  path="/home" component={<Home/>}/>
+         
+          <Route  path="/login" element={<AccountBox />} />
+          
+        </Routes>
+      </BrowserRouter>
     </AppContainer>
     
+
 
 
   )
