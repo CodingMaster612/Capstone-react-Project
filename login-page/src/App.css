@@ -37,7 +37,7 @@
   }
 }
 
-html body{
+/* html body{
   
   
   
@@ -49,11 +49,13 @@ html body{
         ),
         
        
-        url('./img/Money.jpg');
+        url('https://media.istockphoto.com/id/1337977426/photo/dark-gray-and-black-grunge-cement-wall-studio-room-space-product-background-template.jpg?b=1&s=170667a&w=0&k=20&c=4dVCV5KtJKEhuQtp5dbnFmwMBAzNknz35VUIa0C3KoE=');
 
       
-    }
+    } */
 
-
+.container-background{
+  background-color: black;
+}
 
   

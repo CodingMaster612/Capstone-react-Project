@@ -8,8 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import { AccountBox } from "./components/accountBox";
 
-
-
+import Background from "./components/Background.js"
 
 const AppContainer = styled.div`
   width: 100%;
@@ -18,30 +17,35 @@ const AppContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 `;
 
 function App() {
   return (
 
+    <BrowserRouter>
+  <AppContainer>
+
+      <Routes>
+        <Route name="/home" element={<Background />} />
+        <Route path="/" element={<AccountBox />} />
+
+
+      </Routes>
+
+      </AppContainer>
+    </BrowserRouter>
 
 
 
 
-    
-    <AppContainer>
-      
-      <BrowserRouter>
-        <Routes>
 
-        
-          <Route  path="/" element={<AccountBox />} />
-          
-          
-        </Routes>
-      </BrowserRouter>
-      
-    </AppContainer>
-    
+
+
+
+
+
+
 
 
 
