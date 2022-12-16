@@ -1,39 +1,39 @@
 import "bootstrap/dist/css/bootstrap.min.css"
-import styled from "styled-components";
+// import styled from "styled-components";
 import "./App.css"
 // import Navbar from "./components/Navigation/Navbar.js";
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import { AccountBox } from "./components/accountBox";
+// import { AccountBox } from "./components/accountBox";
 
-import Background from "./components/Background.js"
 
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+// const AppContainer = styled.div`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   background-color: white;
   
-`;
+// `;
 
 function App() {
   return (
 
     <BrowserRouter>
-  <AppContainer>
+  {/* <AppContainer> */}
 
       <Routes>
-        <Route name="/home" element={<Background />} />
-        <Route path="/" element={<AccountBox />} />
+       
+        <Route path="/" />
 
 
       </Routes>
 
-      </AppContainer>
+      {/* </AppContainer> */}
     </BrowserRouter>
 
 
